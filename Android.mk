@@ -77,9 +77,9 @@ common_SRC_FILES:= \
 #common_CFLAGS += -DNO_WINDOWS_BRAINDEATH 
 
 common_C_INCLUDES += \
-	$(LOCAL_PATH)/../openssl \
-	$(LOCAL_PATH)/../openssl/include \
-	$(LOCAL_PATH)/../openssl/crypto \
+	$(LOCAL_PATH)/../openssl-openvpn-static \
+	$(LOCAL_PATH)/../openssl-openvpn-static/include \
+	$(LOCAL_PATH)/../openssl-openvpn-static/crypto \
 	$(LOCAL_PATH)/../liblzo/include
 
 common_SHARED_LIBRARIES := 
