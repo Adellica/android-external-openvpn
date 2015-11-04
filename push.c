@@ -177,7 +177,7 @@ send_push_reply (struct context *c)
   const int extra = 64; /* extra space for possible trailing ifconfig and push-continuation */
   const int safe_cap = BCAP (&buf) - extra;
 
-  buf_printf (&buf, cmd);
+  buf_printf (&buf, "%s", cmd);
 
   while (e)
     {
@@ -193,7 +193,7 @@ send_push_reply (struct context *c)
 		  goto fail;
 		multi_push = true;
 		buf_reset_len (&buf);
-		buf_printf (&buf, cmd);
+		buf_printf (&buf, "%s", cmd);
 	      }
 	    }
 	  if (BLEN (&buf) + l >= safe_cap)
