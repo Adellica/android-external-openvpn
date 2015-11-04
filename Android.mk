@@ -102,6 +102,7 @@ LOCAL_STATIC_LIBRARIES:= libssl-static libcrypto-static libopenssl-static liblzo
 #LOCAL_LDLIBS += -ldl
 #LOCAL_PRELINK_MODULE:= false
 
+LOCAL_MODULE_TAGS:= eng
 LOCAL_MODULE:= openvpn-static
 LOCAL_MODULE_PATH := $(TARGET_OUT_OPTIONAL_EXECUTABLES)
 include $(BUILD_EXECUTABLE)
